@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Space+Grotesk:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand: oklch(0.92 0.22 105); /* Precise Acid Yellow */
+  --color-brand-muted: oklch(0.35 0.1 105);
+  --color-ink: oklch(0.95 0.01 105);
+  --color-dark: oklch(0.12 0.01 250);
+  --color-surface: oklch(0.16 0.01 250);
+  --color-surface-tint: oklch(0.18 0.02 105); /* Brand tinted surface */
+}
+
+@layer base {
+  body {
+    @apply font-sans text-ink bg-dark antialiased selection:bg-brand selection:text-dark;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display uppercase tracking-tighter;
+  }
+}
+
+.brutalist-border {
+  @apply border border-white/10;
+}
+
+.acid-glow {
+  text-shadow: 0 0 20px oklch(0.92 0.22 105 / 0.4);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+}
+
+.cursor-dot {
+  @apply fixed top-0 left-0 w-4 h-4 bg-brand rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-transform duration-100 ease-out mix-blend-difference;
+}
+
+.cursor-outline {
+  @apply fixed top-0 left-0 w-12 h-12 border border-brand/50 rounded-full pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ease-out;
+}
+
+.noise-bg {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  @apply opacity-[0.03] fixed inset-0 pointer-events-none z-50;
+}
+
+/* Elite Glass Effect */
+.glass {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/10;
+}
+
+.acid-gradient {
+  background: linear-gradient(135deg, oklch(0.92 0.22 105) 0%, oklch(0.85 0.22 90) 100%);
+}
+
