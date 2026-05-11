@@ -1,5 +1,5 @@
 <div align="center">
-<img width="1200" height="475" alt="Project Banner" src="https://user-images.githubusercontent.com/your-username/your-repo/master/docs/banner.png" />
+<img src="https://lh3.googleusercontent.com/d/13QKwSsgN7MWvRgFaxB31148WYI2JzBI-=s0" alt="Signet Marketing Landing Page Screenshot" width="480" height="600" />
 </div>
 
 # Open Source Marketing Landing Page Template
@@ -27,8 +27,8 @@ Make sure you have Node.js (version 18 or higher) installed on your machine.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
-    cd your-repo
+    git clone https://github.com/bymilon/signet-marketing-landing-page.git
+    cd signet-marketing-landing-page
     ```
 
 2.  **Install dependencies:**
@@ -102,5 +102,8 @@ Please make sure to read the [CONTRIBUTING.md](CONTRIBUTING.md) (if it exists) f
 This project is open source and available under the [MIT License](LICENSE) (or other appropriate license).
 
 ## Stay in Touch
+
+*   **GitHub:** [https://github.com/bymilon/signet-marketing-landing-page](https://github.com/bymilon/signet-marketing-landing-page)
+*   **X (Twitter):** [https://x.com/milonspace](https://x.com/milonspace)
 
 If you like this project, give it a star on GitHub! ⭐ Your support helps us grow.
